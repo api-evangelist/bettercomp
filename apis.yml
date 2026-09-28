@@ -1,23 +1,104 @@
 aid: bettercomp
+
 name: BetterComp
-description: 'BetterComp is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.bettercomp.com/wp-content/uploads/2026/02/51f265ba727c8b32740c5ebd2c65093c0672d6a9-1200x630-1.webp
+
+description: BetterComp provides a modern compensation platform that leverages AI and data integration to help companies price jobs, manage compensation
+  structures, and make data‑driven pay decisions. The solution unifies HRIS data, market surveys, and internal pay logic, offering tools for range
+  modeling, market pricing, reporting, and AI‑assisted decision making, aimed at improving speed, fairness, and strategic impact of compensation
+  across organizations.
+
 url: https://raw.githubusercontent.com/api-evangelist/bettercomp/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
-- Company
-apis: []
+- Compensation
+- HRTech
+- AI
+- SaaS
+- Enterprise
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conformance
+  url: conformance/bettercomp-conformance.yml
+- type: LLMsTxt
+  url: llms/bettercomp-llms.txt
+- type: Hosts
+  url: hosts/bettercomp-hosts.yml
+- type: Support
+  url: https://www.bettercomp.com/help
+- type: PrivacyPolicy
+  url: https://www.bettercomp.com/privacy/
+- type: Pricing
+  url: https://www.bettercomp.com/blog/pricing-unique-and-emerging-jobs/
+- type: Blog
+  url: https://www.bettercomp.com/blog/
+- type: GettingStarted
+  url: https://www.bettercomp.com/guide/ai-quick-start-guide/
+- type: GitHubOrganization
+  url: https://github.com/BetterComp
+- type: DomainSecurity
+  url: security/bettercomp-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.bettercomp.com/
+  x-coverage:
+    state: unreadable
+    reason: js-rendered-docs
+    detail: Developer guide pages render via JavaScript and no OpenAPI spec is publicly accessible.
+    evidence:
+    - url: https://api.bettercomp.com/openapi.json
+      status: 403
+    checked: '2026-09-28'
+- type: DomainSecurity
+  url: security/bettercomp-domain-security.yml
+- type: Website
+  url: https://www.bettercomp.com/
+
+apis:
+- name: BetterComp API
+  description: Compensation platform API (no public spec discovered)
+  humanURL: https://www.bettercomp.com/resources?contentType=guide
+  baseURL: null
+  aid: bettercomp:bettercomp-api
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-28'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://api.bettercomp.com/mcp
+    status: 403
+  - url: https://app.bettercomp.com/mcp
+    status: 403
+  - url: https://status.bettercomp.com/mcp
+    status: 403
+  - url: https://www.nasdaqprivatemarket.com/
+    status: 200
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

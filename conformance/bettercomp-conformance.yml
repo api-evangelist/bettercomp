@@ -1,0 +1,13 @@
+generated: '2026-09-28'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.bettercomp.com/blog/bettercomps-commitment-to-data-security/
+sources:
+- https://www.bettercomp.com/blog/bettercomps-commitment-to-data-security/
+- https://www.bettercomp.com/privacy/
+- https://www.bettercomp.com/blog/pay-transparency-laws-by-state-2026/
+standards:
+- id: soc2
+  conforms: true
+  evidence: 'BetterComp’s Commitment to Data Security: Another Clean SOC 2 Type II Report'
+docs: https://www.bettercomp.com/blog/bettercomps-commitment-to-data-security/

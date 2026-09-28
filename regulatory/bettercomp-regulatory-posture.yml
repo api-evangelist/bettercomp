@@ -1,0 +1,16 @@
+generated: '2026-09-28'
+method: probed
+source: https://www.bettercomp.com/privacy/
+signals:
+  data_subject_request:
+    url: https://www.bettercomp.com/privacy/
+    note: Mechanism for data subjects to request services or submit complaints.
+    evidence:
+      - source: https://www.bettercomp.com/privacy/
+        http_status: 200
+        fetched: privacy_full.html
+        quote: "When a Customer requests products and/or services from us, we ask that Customer provide accurate and necessary information that enables us to respond to Customer’s request."
+      - source: https://www.bettercomp.com/privacy/
+        http_status: 200
+        fetched: privacy_full.html
+        quote: "when you contact us with a complaint or a request;"
