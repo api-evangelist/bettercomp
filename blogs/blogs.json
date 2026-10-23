@@ -5,12 +5,19 @@
       "source": "https://www.bettercomp.com/blog/",
       "feed_url": "https://www.bettercomp.com/blog/feed/",
       "title": "",
-      "saved": 5,
+      "saved": 0,
       "method": "discovered"
     },
     {
       "source": "https://www.bettercomp.com/feed/",
       "feed_url": "https://www.bettercomp.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://www.bettercomp.com/blog/feed/",
+      "feed_url": "https://www.bettercomp.com/blog/feed/",
       "title": "",
       "saved": 0,
       "method": "feed"
@@ -23,6 +30,6 @@
       "method": "feed"
     }
   ],
-  "post_count": 5,
-  "fetched": "2026-10-10T13:15:00Z"
+  "post_count": 11,
+  "fetched": "2026-10-17T14:53:57Z"
 }
